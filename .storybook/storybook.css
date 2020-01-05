@@ -1,0 +1,14 @@
+.sb-show-main {
+    border: 20px solid #f7f7f7;
+    padding: 20px;
+}
+
+._box-placeholder {
+    border: 2px dashed #bbb;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+.c-grid-container p {
+    background-color: #C3C3C3; color: #FFF; padding: 10px; text-align: center;
+}

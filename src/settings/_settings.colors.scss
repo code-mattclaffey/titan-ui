@@ -1,0 +1,154 @@
+//------------------------------------
+// #COLORS
+//------------------------------------
+
+$color-blue:   #2175C7 !default;
+$color-yellow: #FEDB10 !default;
+$color-red:    #C41225 !default;
+$color-peach:  #ED5A4F !default;
+$color-green:  #7BCD1C !default;
+$color-orange: #FF9800 !default;
+$color-black:  #191919 !default;
+$color-white:  #FFF !default;
+
+// UI
+$color-ui-black:  #000 !default;
+$color-ui-grey-1: #41444B !default;
+$color-ui-grey-2: #747777 !default;
+$color-ui-grey-3: #B4B8B8 !default;
+$color-ui-grey-4: #E7E9EC !default;
+$color-ui-grey-5: #F7F7F7 !default;
+
+// Brand
+$color-brand-primary:   $color-blue !default;
+$color-brand-secondary: $color-green !default;
+$color-brand-tertiary:  $color-red !default;
+
+// Alert colours
+$color-alert-text:         $color-white !default;
+$color-alert-error:        $color-peach !default;
+$color-alert-error-text:   $color-alert-text !default;
+$color-alert-success:      $color-green !default;
+$color-alert-success-text: $color-alert-text !default;
+$color-alert-warning:      $color-orange !default;
+$color-alert-warning-text: $color-alert-text !default;
+$color-alert-notice:       $color-brand-primary !default;
+$color-alert-notice-text:  $color-alert-text !default;
+
+// Global
+$color-font:   $color-ui-grey-1 !default;
+$color-body:   $color-ui-grey-2 !default;
+$color-border: $color-ui-grey-4 !default;
+
+// Links
+$color-links:         $color-brand-secondary !default;
+$color-links-active:  $color-brand-secondary !default;
+$color-links-visited: $color-brand-secondary !default;
+
+// Header
+$color-default-header: $color-body !default;
+$color-header-links:   $color-ui-grey-2 !default;
+
+// Footer
+$color-footer-bg:                    $color-ui-grey-5 !default;
+$color-footer-copyright-bg:          $color-ui-grey-4 !default;
+$color-footer-copyright-bg-mobile:   $color-footer-copyright-bg !default;
+$color-footer-copyright-text:        $color-body !default;
+$color-footer-copyright-text-mobile: $color-footer-copyright-text !default;
+$color-footer-headers:               $color-default-header !default;
+$color-footer-list-header:           $color-footer-headers !default;
+$color-footer-list:                  $color-footer-list-header !default;
+
+// Nav
+$color-nav-hover:           darken($color-body, 20%) !default;
+$color-category-item:       $color-nav-hover !default;
+$color-category-item-hover: $color-links !default;
+$color-main-nav:            $color-white !default;
+$color-main-nav-bg:         $color-black !default;
+
+// Forms
+$color-validation-error:       $color-alert-error !default;
+$color-checkbox-bg:            $color-white !default;
+$color-checkbox-border:        $color-ui-grey-3 !default;
+$color-checkbox-checked-bg:    $color-brand-secondary !default;
+$color-input-border:           $color-ui-grey-3 !default;
+$color-input-border-focus:     $color-brand-primary !default;
+$color-input-placeholder:      $color-ui-grey-2 !default;
+$color-input-focus:            $color-black !default;
+$color-input-validation-valid: $color-brand-primary !default;
+$color-input-validation-error: $color-alert-error !default;
+$color-input-disabled:         $color-ui-grey-4 !default;
+$color-input:                  $color-ui-grey-2 !default;
+$color-input-bg:               $color-white !default;
+$color-label:                  $color-ui-grey-2 !default;
+
+// Buttons
+// Primary
+$color-btn:          $color-white !default;
+$color-btn-bg:       $color-brand-secondary !default;
+$color-btn-hover:    $color-btn !default;
+$color-btn-bg-hover: darken($color-btn-bg, 10%) !default;
+
+// Secondary
+$color-btn-secondary:          $color-white !default;
+$color-btn-secondary-bg:       $color-brand-primary !default;
+$color-btn-secondary-hover:    $color-btn-secondary !default;
+$color-btn-secondary-bg-hover: darken($color-btn-secondary-bg, 10%) !default;
+
+// Plain
+$color-btn-plain:       $color-brand-primary !default;
+$color-btn-plain-hover: $color-btn-plain !default;
+
+// Outline
+$color-btn-outline:              $color-brand-primary !default;
+$color-btn-outline-border:       $color-brand-primary !default;
+$color-btn-outline-hover:        $color-brand-secondary !default;
+$color-btn-outline-border-hover: $color-brand-secondary !default;
+
+// Disabled
+$color-btn-disabled:        $color-ui-grey-3 !default;
+$color-btn-disabled-bg:     $color-input-disabled !default;
+$color-btn-disabled-border: $color-input-disabled !default;
+
+// Tabs
+$color-tab:          $color-black !default;
+$color-tab-selected: $color-black !default;
+
+// Ratings
+$color-star-selected:   $color-brand-secondary !default;
+$color-star-unselected: $color-ui-grey-3 !default;
+
+// Price
+$color-price-special: $color-red !default;
+
+// Gallery
+$color-gallery-thumbnail-border: $color-brand-primary !default;
+$color-gallery-dot:              $color-brand-primary !default;
+
+// Breadcrumbs
+$color-breadcrumb-link:           $color-body !default;
+$color-breadcrumb-link-hover:     $color-body !default;
+$color-breadcrumb-item:           $color-font !default;
+$color-breadcrumb-item-separator: $color-font !default;
+
+// React PLP
+$color-plp-sidebar-mob-bg:        $color-white !default;
+$color-plp-sidebar-mob-plus-icon: $color-blue !default;
+$color-plp-sidebar-actions:       $color-input-border !default;
+$color-plp-loader-bg:             $color-brand-primary !default;
+$color-plp-toolbar-bg:            $color-plp-sidebar-mob-bg !default;
+
+// React PLP attributes
+$color-attribute-after-image-bg:   $color-brand-primary !default;
+$color-attribute-after-image-text: $color-white !default;
+
+// React search suggestions
+$color-suggestions-input-border:  $color-input-border !default;
+$color-suggestions-input-bg:      $color-input-bg !default;
+$color-suggestions-hover-bg:      $color-brand-secondary !default;
+$color-suggestions-hover-text:    $color-white !default;
+
+// Tooltips
+$color-tooltips-hover-bg:     $color-white;
+$color-tooltips-hover-text:   $color-ui-black;
+$color-tooltips-hover-border: $color-ui-grey-3;

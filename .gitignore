@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+# IDE's
+.idea
+# 3rd party dependencies
+node_modules
+# Generated files
+.sass-cache
+# Test results
+styleguide/test/visual/bitmaps_test
+styleguide/test/visual/html_report
+styleguide/test/visual/ci_report
+# Node version (help prevent Node version issues when building on environments)
+.node-version
+storybook-static
+.env
+dist

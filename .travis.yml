@@ -1,0 +1,16 @@
+os:
+  - osx
+language: node_js
+sudo: false
+node_js:
+  - 11.2
+install:
+  - npm i
+script:
+  - >
+    if [[ $TRAVIS_BRANCH = master ]] || [[ $TRAVIS_PULL_REQUEST == true ]]; then
+      npm run build && npm test
+    else
+      echo "Not a named branch, do not run the tests."
+      exit 0;
+    fi;

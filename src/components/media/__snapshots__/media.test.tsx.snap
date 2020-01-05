@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MediaContainer />, MediaImageContainer & MediaContentContainer should match inline snapshot 1`] = `
+<div>
+  <div
+    class="o-media c-media-item"
+  >
+    <div
+      class="o-media__img c-media-item__image-container"
+    >
+      <p>
+        Image container
+      </p>
+    </div>
+    <div
+      class="o-media__body c-media-item__content-container"
+    >
+      <p>
+        Content container
+      </p>
+    </div>
+  </div>
+</div>
+`;
