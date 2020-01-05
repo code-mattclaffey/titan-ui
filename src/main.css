@@ -19,9 +19,7 @@
 
 /* Objects */
 
-@import './objects/_objects.layout.css';
 @import './objects/_objects.list.css';
-@import './objects/_objects.media.css';
 @import './objects/_objects.grid.css';
 @import './objects/_objects.box.css';
 
@@ -36,6 +34,7 @@
 @import './components/picture/picture.css';
 @import './components/figure/figure.css';
 @import './components/text/text.css';
+@import './components/region/region.css';
 
 /* Utils */
 
