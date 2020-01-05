@@ -4,9 +4,9 @@
 
 @import 'normalize.css';
 
-/* @import './settings/settings.global.css';
-@import './settings/settings.colors.css';
-@import './settings/settings.fonts.css'; */
+@import './settings/_settings.colors.css';
+@import './settings/_settings.fonts.css';
+@import './settings/_settings.breakpoints.css';
 
 /* Generic */
 

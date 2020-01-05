@@ -1,0 +1,12 @@
+/* ------------------------------------
+    FONTS
+------------------------------------ */
+
+:root {
+    --base-font-size: 16px;
+    --base-line-height: 1.4;
+    --base-font-family: Avenir, 'Avenir Next', 'Helvectica Neue',
+        sans-serif;
+    --base-font-weight: 400;
+    --base-font-color: var(--primary);
+}

@@ -12,5 +12,6 @@
     "value-list-comma-newline-after": null,
     "max-nesting-depth": 2,
     "css-propertyvalueexpected": "off",
+    "unknownAtRules": "off"
   }
 }

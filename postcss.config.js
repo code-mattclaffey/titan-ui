@@ -1,11 +1,11 @@
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const postcssCustomProperties = require('postcss-custom-properties');
-const customMedia = require('postcss-custom-media');
 const postcssImport = require('postcss-import');
-
+const customMedia = require('postcss-custom-media');
 const stylelint = require('stylelint');
 const mqpacker = require('mqpacker');
+const pxtorem = require('postcss-pxtorem');
 
 module.exports = () => {
     return {
@@ -23,6 +23,7 @@ module.exports = () => {
             mqpacker({
                 sort: true,
             }),
+            pxtorem(),
         ],
     };
 };
