@@ -13,10 +13,6 @@
 @import './generic/_generic.reset.css';
 @import './generic/_generic.shared.css';
 
-/* Elements */
-
-@import './elements/_elements.forms.css';
-
 /* Objects */
 
 @import './objects/_objects.box.css';
@@ -34,6 +30,7 @@
 @import '../components/text/text.css';
 @import '../components/region/region.css';
 @import '../components/grid/grid.css';
+@import '../components/input/input.css';
 
 /* Utils */
 
