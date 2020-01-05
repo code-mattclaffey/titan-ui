@@ -3,7 +3,7 @@
 exports[`<Picture /> should match snapshot 1`] = `
 <div>
   <picture
-    class=""
+    class="e-picture"
     style="padding-top: 133.33333333333331%;"
   >
     <source
@@ -12,7 +12,7 @@ exports[`<Picture /> should match snapshot 1`] = `
     />
     <img
       alt="A placeholder image"
-      class=""
+      class="e-img"
       src="https://via.placeholder.com/400x300"
     />
   </picture>
