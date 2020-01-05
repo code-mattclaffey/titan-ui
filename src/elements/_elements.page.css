@@ -7,4 +7,5 @@ html {
     line-height: var(--base-line-height);
     font-family: var(--base-font-family);
     color: var(--base-font-color);
+    font-weight: var(--base-font-weight-medium);
 }

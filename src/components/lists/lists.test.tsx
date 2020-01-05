@@ -50,12 +50,4 @@ describe('<ListItem />', () => {
 
         expect(container).toMatchSnapshot();
     });
-
-    it('should match highlighted snapshot', () => {
-        const { container } = render(
-            <ListItem highlight>List item</ListItem>,
-        );
-
-        expect(container).toMatchSnapshot();
-    });
 });
