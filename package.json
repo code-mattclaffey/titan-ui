@@ -9,7 +9,7 @@
     },
     "scripts": {
         "start": "npm run build && npm run storybook",
-        "build": "npm run build:css && npm run copy && npm run build:js",
+        "build": "npm run build:css && npm run build:js",
         "build:css": "postcss ./src/main.css -o ./dist/css/main.css -m",
         "serve": "http-server storybook-static -p 8081 -s",
         "test": "npm run lint:js && npm run jest",
@@ -79,6 +79,7 @@
         "postcss-custom-media": "^7.0.8",
         "postcss-custom-properties": "^9.0.2",
         "postcss-import": "^12.0.1",
+        "postcss-pxtorem": "^4.0.1",
         "regenerator-runtime": "^0.13.3",
         "storybook-react-to-static-markup": "^0.1.1",
         "stylelint": "^12.0.1",

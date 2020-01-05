@@ -9,6 +9,20 @@
     margin-bottom: 20px;
 }
 
-.c-grid-container p {
-    background-color: #C3C3C3; color: #FFF; padding: 10px; text-align: center;
+.s-colour-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.s-colour-grid__item {
+    color: var(--white);
+    grid-column: span 4;
+    padding: 40px;
+    text-align: center;
+}
+
+.s-colour-grid__item--variant {
+    color: var(--black);
 }
