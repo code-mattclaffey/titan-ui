@@ -1,0 +1,16 @@
+/*
+    Picture
+*/
+
+.e-picture {
+    display: block;
+    position: relative;
+}
+
+.e-picture .e-img {
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

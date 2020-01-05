@@ -9,7 +9,7 @@ export const Image = ({
     children,
     ...rest
 }: ImageInterface) => {
-    const classes = classNames(additionalClassNames);
+    const classes = classNames('e-img', additionalClassNames);
 
     return <img className={classes} {...rest} src={src} alt={alt} />;
 };

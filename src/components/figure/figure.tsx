@@ -8,7 +8,7 @@ export const Figure = ({
     captionText,
     ...rest
 }: FigureInterface) => {
-    const classes = classNames(additionalClassNames);
+    const classes = classNames('e-figure', additionalClassNames);
 
     return (
         <figure className={classes} {...rest}>
@@ -23,7 +23,10 @@ export const FigCaption = ({
     children,
     ...rest
 }: FigureCaptionInterface) => {
-    const classes = classNames(additionalClassNames);
+    const classes = classNames(
+        'e-figure__caption',
+        additionalClassNames,
+    );
 
     return (
         <figcaption className={classes} {...rest}>

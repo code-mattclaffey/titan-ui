@@ -13,7 +13,7 @@ export const Picture = ({
     children,
     ...rest
 }: PictureInterface) => {
-    const classes = classNames(additionalClassNames);
+    const classes = classNames('e-picture', additionalClassNames);
 
     let styleProps: React.CSSProperties = {
         paddingTop: '',
