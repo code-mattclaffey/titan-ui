@@ -4,7 +4,7 @@ exports[`<Image /> should match snapshot 1`] = `
 <div>
   <img
     alt="A placeholder image"
-    class="c-img"
+    class="e-img c-img"
     src="https://via.placeholder.com/400x300"
   />
 </div>

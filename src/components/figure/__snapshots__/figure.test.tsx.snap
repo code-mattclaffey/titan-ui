@@ -3,15 +3,15 @@
 exports[`<Figure /> should match Figure & FigCaption snapshot 1`] = `
 <div>
   <figure
-    class="c-figure"
+    class="e-figure c-figure"
   >
     <img
       alt="A placeholder image"
-      class=""
+      class="e-img"
       src="https://via.placeholder.com/400x300"
     />
     <figcaption
-      class="c-figure__caption"
+      class="e-figure__caption c-figure__caption"
     >
       Hello World
     </figcaption>
@@ -22,15 +22,15 @@ exports[`<Figure /> should match Figure & FigCaption snapshot 1`] = `
 exports[`<Figure /> should match Figure only snapshot 1`] = `
 <div>
   <figure
-    class="c-figure"
+    class="e-figure c-figure"
   >
     <img
       alt="A placeholder image"
-      class=""
+      class="e-img"
       src="https://via.placeholder.com/400x300"
     />
     <figcaption
-      class=""
+      class="e-figure__caption"
     >
       Hello World
     </figcaption>
