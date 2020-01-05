@@ -10,7 +10,7 @@
 
 .s-colour-grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, minmax(20em, 1fr));
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
@@ -24,4 +24,10 @@
 
 .s-colour-grid__item--variant {
     color: var(--black);
+}
+
+.o-grid__item {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 20px;
 }
