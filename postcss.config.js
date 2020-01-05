@@ -10,15 +10,14 @@ const pxtorem = require('postcss-pxtorem');
 module.exports = () => {
     return {
         plugins: [
-            stylelint(),
             postcssImport({
-                plugins: [stylelint],
+                plugins: [stylelint()],
             }),
             postcssCustomProperties(),
             autoprefixer({
                 flexbox: 'no-2009',
             }),
-            cssnano(),
+            // cssnano(),
             customMedia(),
             mqpacker({
                 sort: true,
