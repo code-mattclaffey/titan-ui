@@ -3,20 +3,20 @@
 exports[`<List /> should match inline snapshot 1`] = `
 <div>
   <ul
-    class="o-list o-list-inline"
+    class="e-list e-list--inline"
   >
     <li
-      class="o-list-inline__item"
+      class="e-list__item"
     >
       List item
     </li>
     <li
-      class="o-list-inline__item"
+      class="e-list__item"
     >
       List item
     </li>
     <li
-      class="o-list-inline__item"
+      class="e-list__item"
     >
       List item
     </li>
@@ -27,20 +27,20 @@ exports[`<List /> should match inline snapshot 1`] = `
 exports[`<List /> should match ol snapshot 1`] = `
 <div>
   <ol
-    class="o-list o-list-stacked"
+    class="e-list e-list--stacked"
   >
     <li
-      class="o-list-inline__item"
+      class="e-list__item"
     >
       List item
     </li>
     <li
-      class="o-list-inline__item"
+      class="e-list__item"
     >
       List item
     </li>
     <li
-      class="o-list-inline__item"
+      class="e-list__item"
     >
       List item
     </li>
@@ -51,20 +51,20 @@ exports[`<List /> should match ol snapshot 1`] = `
 exports[`<List /> should match stacked snapshot 1`] = `
 <div>
   <ul
-    class="o-list o-list-stacked"
+    class="e-list e-list--stacked"
   >
     <li
-      class="o-list-inline__item"
+      class="e-list__item"
     >
       List item
     </li>
     <li
-      class="o-list-inline__item"
+      class="e-list__item"
     >
       List item
     </li>
     <li
-      class="o-list-inline__item"
+      class="e-list__item"
     >
       List item
     </li>
@@ -72,20 +72,10 @@ exports[`<List /> should match stacked snapshot 1`] = `
 </div>
 `;
 
-exports[`<ListItem /> should match highlighted snapshot 1`] = `
-<div>
-  <li
-    class="o-list-inline__item o-list__item--highlighted"
-  >
-    List item
-  </li>
-</div>
-`;
-
 exports[`<ListItem /> should match snapshot 1`] = `
 <div>
   <li
-    class="o-list-inline__item"
+    class="e-list__item"
   >
     List item
   </li>
