@@ -18,14 +18,14 @@ describe('<Grid />', () => {
                         lg: '9',
                         xl: '12',
                     }}
-                ></GridItem>
+                />
                 <GridItem
                     columns={{
                         xs: '6',
                         lg: '9',
                         xl: '12',
                     }}
-                ></GridItem>
+                />
             </Grid>,
         );
 
