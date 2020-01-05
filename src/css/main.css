@@ -23,17 +23,17 @@
 
 /* Components */
 
-@import './components/heading/heading.css';
-@import './components/lists/lists.css';
-@import './components/blockquote/blockquote.css';
-@import './components/anchor/anchor.css';
-@import './components/buttons/buttons.css';
-@import './components/image/image.css';
-@import './components/picture/picture.css';
-@import './components/figure/figure.css';
-@import './components/text/text.css';
-@import './components/region/region.css';
-@import './components/grid/grid.css';
+@import '../components/heading/heading.css';
+@import '../components/lists/lists.css';
+@import '../components/blockquote/blockquote.css';
+@import '../components/anchor/anchor.css';
+@import '../components/buttons/buttons.css';
+@import '../components/image/image.css';
+@import '../components/picture/picture.css';
+@import '../components/figure/figure.css';
+@import '../components/text/text.css';
+@import '../components/region/region.css';
+@import '../components/grid/grid.css';
 
 /* Utils */
 
