@@ -8,7 +8,7 @@ import {
 
 import { Image } from '../image';
 
-import { Heading } from '../typography';
+// import { Heading } from '../typography';
 
 export default {
     title: 'Media',
@@ -17,7 +17,7 @@ export default {
 
 export const media = () => (
     <>
-        <Heading>Media object example</Heading>
+        {/* <Heading>Media object example</Heading> */}
         <MediaContainer>
             <MediaImageContainer>
                 <Image
@@ -41,7 +41,7 @@ export const media = () => (
 
         <hr />
 
-        <Heading>Media object large example</Heading>
+        {/* <Heading>Media object large example</Heading> */}
         <MediaContainer size="large">
             <MediaImageContainer>
                 <Image
@@ -65,7 +65,7 @@ export const media = () => (
 
         <hr />
 
-        <Heading>Media object reversed example</Heading>
+        {/* <Heading>Media object reversed example</Heading> */}
         <MediaContainer reverse>
             <MediaImageContainer>
                 <Image
