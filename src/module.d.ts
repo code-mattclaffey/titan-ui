@@ -3,4 +3,5 @@ export interface GenericComponent {
     additionalClassNames?: string;
     children?: React.ReactNode;
     rest?: any;
+    style?: any;
 }
