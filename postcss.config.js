@@ -17,7 +17,7 @@ module.exports = () => {
             autoprefixer({
                 flexbox: 'no-2009',
             }),
-            // cssnano(),
+            cssnano(),
             customMedia(),
             mqpacker({
                 sort: true,
