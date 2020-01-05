@@ -17,9 +17,7 @@
 
 @import './elements/_elements.breaks.css';
 @import './elements/_elements.forms.css';
-@import './elements/_elements.headings.css';
 @import './elements/_elements.images.css';
-@import './elements/_elements.links.css';
 @import './elements/_elements.page.css';
 @import './elements/_elements.tables.css';
 @import './elements/_elements.videos.css';
@@ -33,6 +31,11 @@
 @import './objects/_objects.box.css';
 
 /* Components */
+
+@import './components/heading/heading.css';
+@import './components/lists/lists.css';
+@import './components/blockquote/blockquote.css';
+@import './components/anchor/anchor.css';
 
 /* Utils */
 

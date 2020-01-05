@@ -1,7 +1,7 @@
 /* //------------------------------------
 // #SHARED
 //------------------------------------ */
-/*
+
 h1,
 h2,
 h3,
@@ -19,11 +19,11 @@ table,
 fieldset,
 figure,
 pre {
-    margin-bottom: $base-spacing-unit;
+    margin-bottom: 20px;
 }
 
 ul,
 ol,
 dd {
-    margin-left: $base-spacing-unit * 2;
-} */
+    margin-left: 20px;
+}

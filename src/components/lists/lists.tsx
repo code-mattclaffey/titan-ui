@@ -13,10 +13,10 @@ export const List = ({
     const HtmlEl = as;
 
     const classes = classNames(
-        'o-list',
+        'e-list',
         {
-            'o-list-inline': inline !== undefined,
-            'o-list-stacked': stacked !== undefined,
+            'e-list--inline': inline !== undefined,
+            'e-list--stacked': stacked !== undefined,
         },
         additionalClassNames,
     );
@@ -32,18 +32,11 @@ export const ListItem = ({
     as = 'li',
     additionalClassNames = '',
     children,
-    highlight,
     ...rest
 }: ListItemInterface) => {
     const HtmlEl = as;
 
-    const classes = classNames(
-        'o-list-inline__item',
-        {
-            'o-list__item--highlighted': highlight !== undefined,
-        },
-        additionalClassNames,
-    );
+    const classes = classNames('e-list__item', additionalClassNames);
 
     return (
         <HtmlEl className={classes} {...rest}>
