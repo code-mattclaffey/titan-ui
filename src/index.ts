@@ -9,3 +9,4 @@ export * from './components/picture';
 export * from './components/figure';
 export * from './components/region';
 export * from './components/blockquote';
+export * from './components/grid';
