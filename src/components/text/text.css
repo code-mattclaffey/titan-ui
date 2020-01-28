@@ -10,3 +10,7 @@ html,
     color: var(--base-font-color);
     font-weight: var(--base-font-weight-medium);
 }
+
+.e-text {
+    color: inherit;
+}
