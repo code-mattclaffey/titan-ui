@@ -2,7 +2,8 @@
     PAGE
 ------------------------------------ */
 
-html {
+html,
+.e-text {
     font-size: var(--base-font-size);
     line-height: var(--base-line-height);
     font-family: var(--base-font-family);
