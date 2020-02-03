@@ -10,7 +10,8 @@
     },
     "scripts": {
         "start": "npm run build && npm run storybook",
-        "build": "npm run build:css && npm run build:js && npm run build:tsc",
+        "build": "npm run clean && npm run build:css && npm run build:js && npm run build:tsc",
+        "clean": "rm -rf ./dist",
         "build:css": "postcss ./src/css/main.css -o ./dist/css/main.css -m",
         "serve": "http-server storybook-static -p 8081 -s",
         "test": "npm run lint:js && npm run jest && npm run tsc:check",

@@ -9,7 +9,6 @@ The styleguide is built using storybook which comes with a lot of features such 
 -   WCAG 2.0 testing
 -   React components
 -   Static markup previews
--   Integrated Percy.io visual regression testing
 
 These features are built to make development a lot easier and more up to date with the other tools we use across our other react projects.
 
