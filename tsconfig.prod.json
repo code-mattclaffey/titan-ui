@@ -1,0 +1,11 @@
+{
+    "include": [
+        "src/components/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.test.tsx",
+        "**/*.stories.tsx",
+    ],
+    "extends": "./tsconfig.json",
+}

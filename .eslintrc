@@ -19,6 +19,9 @@
         "@typescript-eslint"
     ],
     "rules": {
+        "import/extensions": "off",
+        "import/no-unresolved": "off",
+        "react/button-has-type": "off",
         "prettier/prettier": ["error"],
         "import/prefer-default-export": "off",
         "react/prop-types": "off",
