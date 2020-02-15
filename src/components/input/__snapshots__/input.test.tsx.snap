@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> should match snapshot 1`] = `
+<div>
+  <input
+    class="e-input"
+    id="hello-test"
+    name="hello-test"
+    required=""
+    type="text"
+  />
+</div>
+`;

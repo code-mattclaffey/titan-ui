@@ -1,3 +1,26 @@
-/* ------------------------------------
-    FORMS
------------------------------------- */
+/* Input */
+:root {
+    --input-bg: var(--white);
+    --input-border: 1px solid var(--keyline);
+    --input-padding: 12px 10px;
+    --input-border-radius: 4px;
+    --input-border: 2px solid var(--primary);
+
+    --input-required-border: 2px solid palegreen;
+    --input-warning-border: 2px solid salmon;
+}
+
+.e-input {
+    appearance: none;
+    background: var(--input-bg);
+    border: var(--input-border);
+    border-radius: var(--input-border-radius);
+    display: block;
+    padding: var(--input-padding);
+    width: 100%;
+}
+
+.e-input:focus {
+    border: var(--input-border);
+    outline: 0;
+}
