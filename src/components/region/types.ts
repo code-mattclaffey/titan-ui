@@ -1,3 +1,5 @@
 import { GenericComponent } from '../../module';
 
-export interface RegionInterface extends GenericComponent {}
+export interface RegionInterface extends GenericComponent {
+    thin?: boolean;
+}

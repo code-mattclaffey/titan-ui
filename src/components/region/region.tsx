@@ -22,16 +22,24 @@ export const RegionInner = ({
     as = 'div',
     additionalClassNames = '',
     children,
+    thin,
     ...rest
 }: RegionInterface) => {
     const HtmlEl = as;
     const classes = classNames(
         `o-region__inner`,
+        {
+            'o-region__inner--thin': thin !== undefined,
+        },
         additionalClassNames,
     );
 
     return (
-        <HtmlEl className={classes} {...rest}>
+        <HtmlEl
+            data-testid="region-inner"
+            className={classes}
+            {...rest}
+        >
             {children}
         </HtmlEl>
     );

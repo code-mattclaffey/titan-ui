@@ -1,0 +1,7 @@
+/* Spacing Settings */
+
+:root {
+    --base-spacing-unit: 20px;
+    --base-spacing-unit--small: 10px;
+    --base-spacing-unit--large: 40px;
+}
