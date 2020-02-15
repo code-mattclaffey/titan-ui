@@ -15,4 +15,17 @@ describe('<Region />', () => {
         );
         expect(container).toMatchSnapshot();
     });
+
+    it('should have a thin class', () => {
+        const { queryByTestId } = render(
+            <Region>
+                <RegionInner thin />
+            </Region>,
+        );
+        expect(
+            queryByTestId('region-inner').classList.contains(
+                'o-region__inner--thin',
+            ),
+        ).toEqual(true);
+    });
 });

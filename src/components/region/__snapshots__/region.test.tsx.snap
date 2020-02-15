@@ -7,6 +7,7 @@ exports[`<Region /> should match snapshot 1`] = `
   >
     <div
       class="o-region__inner"
+      data-testid="region-inner"
     />
   </section>
 </div>

@@ -3,17 +3,18 @@
 ------------------------------------ */
 
 :root {
-    --region-gutter-vertical: 40px;
+    --region-gutter-vertical: var(--base-spacing-unit--large);
     --region-gutter-horizontal: 15px;
     --region-width: var(--xl-viewport);
+    --region-thin-width: var(--md-viewport);
     --region-bg: var(--white);
     --region-text-color: var(--primary);
 }
 
 @media (--md-viewport) {
     :root {
-        --region-gutter-vertical: 60px;
-        --region-gutter-horizontal: 20px;
+        --region-gutter-vertical: calc(var(--base-spacing-unit) * 3);
+        --region-gutter-horizontal: var(--base-spacing-unit);
         --region-width: var(--xl-viewport);
     }
 }
@@ -23,6 +24,7 @@
     color: var(--region-text-color);
     padding-bottom: var(--region-gutter-vertical);
     padding-top: var(--region-gutter-vertical);
+    position: relative;
 }
 
 .o-region__inner {
@@ -31,4 +33,8 @@
     padding-left: var(--region-gutter-horizontal);
     padding-right: var(--region-gutter-horizontal);
     width: 100%;
+}
+
+.o-region__inner--thin {
+    max-width: var(--region-thin-width);
 }

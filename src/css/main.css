@@ -6,6 +6,7 @@
 @import './settings/_settings.colors.css';
 @import './settings/_settings.fonts.css';
 @import './settings/_settings.breakpoints.css';
+@import './settings/_settings.spacing.css';
 
 /* Generic */
 
@@ -31,6 +32,7 @@
 @import '../components/region/region.css';
 @import '../components/grid/grid.css';
 @import '../components/input/input.css';
+@import '../components/label/label.css';
 
 /* Utils */
 

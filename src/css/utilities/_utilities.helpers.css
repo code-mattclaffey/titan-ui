@@ -2,15 +2,33 @@
     HELPERS
 ------------------------------------ */
 
-.u-visualy-hidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
+.u-margin--none {
+    margin: 0;
+}
+
+.u-margin--left {
+    margin-left: var(--base-spacing-unit);
+}
+
+.u-margin--right {
+    margin-right: var(--base-spacing-unit);
+}
+
+.u-margin--bottom {
+    margin-bottom: var(--base-spacing-unit);
+}
+
+.u-margin--top {
+    margin-top: var(--base-spacing-unit);
+}
+
+.u-visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
     overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
 }
