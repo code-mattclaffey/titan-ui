@@ -1,3 +1,5 @@
+import './css/main.css';
+
 export * from './components/buttons';
 export * from './components/image';
 export * from './components/lists';
