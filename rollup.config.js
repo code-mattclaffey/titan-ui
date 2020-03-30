@@ -24,7 +24,9 @@ export default [
                 extensions,
             }),
             commonjs(),
-            typescript(),
+            typescript({
+                tsconfig: 'tsconfig.prod.json',
+            }),
             terser(),
         ],
         external: ['react'],

@@ -1,6 +1,6 @@
 {
     "name": "@titan-tooling/ui",
-    "version": "0.11.0-alpha.6",
+    "version": "0.11.0-alpha.7",
     "sideEffects": false,
     "description": "Titan UI CSS",
     "main": "dist/index.js",
@@ -16,7 +16,7 @@
         "clean": "rm -rf ./dist",
         "build:css": "postcss ./src/css/main.css -o ./dist/css/main.css -m",
         "serve": "http-server storybook-static -p 8081 -s",
-        "test": "npm run lint:js && npm run jest && npm run tsc:check && npm run snapshot",
+        "test": "npm run lint:js && npm run jest && npm run snapshot",
         "jest": "jest",
         "prepublish": "npm run build",
         "storybook": "npm run build && start-storybook -s ./dist -p 6006",
@@ -40,8 +40,6 @@
         "@babel/cli": "^7.7.4",
         "@babel/core": "^7.7.4",
         "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
-        "@babel/plugin-syntax-class-properties": "^7.7.4",
-        "@babel/plugin-syntax-dynamic-import": "^7.7.4",
         "@babel/plugin-transform-modules-commonjs": "^7.7.4",
         "@babel/plugin-transform-runtime": "^7.7.4",
         "@babel/preset-env": "^7.7.4",
@@ -95,7 +93,7 @@
         "storybook-react-to-static-markup": "^0.1.1",
         "stylelint": "^12.0.1",
         "stylelint-config-standard": "^19.0.0",
-        "ts-jest": "^24.2.0",
+        "ts-jest": "^24.3.0",
         "typescript": "^3.8.3"
     }
 }
