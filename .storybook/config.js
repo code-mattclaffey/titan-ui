@@ -9,7 +9,7 @@ import { withA11y } from '@storybook/addon-a11y';
 import { withStaticMarkup } from 'storybook-react-to-static-markup';
 import theme from './theme';
 import './storybook.css';
-import '../dist/css/main.css';
+import '../dist/main.css';
 
 addDecorator(withStaticMarkup);
 addDecorator(withA11y);
