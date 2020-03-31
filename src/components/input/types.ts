@@ -6,4 +6,6 @@ export interface InputInterface extends GenericComponent {
     placeholder?: string;
     required?: boolean;
     type: string;
+    defaultValue?: string;
+    labelText: string;
 }

@@ -11,4 +11,3 @@ export * from './components/region';
 export * from './components/blockquote';
 export * from './components/grid';
 export * from './components/anchor';
-export * from './components/label';

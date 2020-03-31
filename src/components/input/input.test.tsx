@@ -9,7 +9,26 @@ afterEach(() => {
 describe('<Input />', () => {
     it('should match snapshot', () => {
         const { container } = render(
-            <Input type="text" name="hello-test" id="hello-test" />,
+            <Input
+                type="text"
+                name="hello-test"
+                id="hello-test"
+                labelText="Hello World"
+            />,
+        );
+
+        expect(container).toMatchSnapshot();
+    });
+
+    it('should match snapshot when it has a value', () => {
+        const { container } = render(
+            <Input
+                type="text"
+                name="hello-test"
+                id="hello-test"
+                defaultValue="hello world"
+                labelText="Hello World"
+            />,
         );
 
         expect(container).toMatchSnapshot();

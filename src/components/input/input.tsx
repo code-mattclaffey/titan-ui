@@ -9,18 +9,34 @@ export const Input = ({
     type,
     id,
     required = true,
+    defaultValue = '',
+    labelText = '',
     ...rest
 }: InputInterface) => {
-    const classes = classNames(`e-input`, additionalClassNames);
+    const emptyValue = defaultValue.trim().length === 0;
+
+    const classes = classNames(`e-input`, additionalClassNames, {
+        'e-input--empty': emptyValue,
+    });
+
+    const labelClasses = classNames('e-label', additionalClassNames, {
+        'e-label--required': required !== undefined,
+    });
 
     return (
-        <input
-            type={type}
-            className={classes}
-            name={name}
-            id={id}
-            {...rest}
-            required={required}
-        />
+        <div className="e-input__container">
+            <label className={labelClasses} htmlFor={id}>
+                {labelText}
+            </label>
+            <input
+                type={type}
+                className={classes}
+                name={name}
+                id={id}
+                {...rest}
+                required={required}
+                defaultValue={emptyValue ? null : defaultValue}
+            />
+        </div>
     );
 };

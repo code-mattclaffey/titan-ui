@@ -1,13 +1,22 @@
 /* Input */
 :root {
     --input-bg: var(--white);
-    --input-border: 1px solid var(--keyline);
+    --input-border: 2px solid var(--keyline);
     --input-padding: 12px 10px;
     --input-border-radius: 4px;
-    --input-border: 2px solid var(--primary);
 
-    --input-required-border: 2px solid palegreen;
-    --input-warning-border: 2px solid salmon;
+    --input-bg-focus: var(--white);
+    --input-border-focus: 2px solid var(--primary);
+
+    --input-success-border: 2px solid var(--success-color);
+    --input-success-bg: var(--success-color);
+    --input-warning-border: 2px solid var(--warning-color);
+    --input-warning-bg: var(--warning-color);
+
+    --label-color: var(--base-font-color);
+    --label-font-weight: var(--base-font-weight-semibold);
+    --label-required-content: " *";
+    --label-required-color: var(--warning-color);
 }
 
 .e-input {
@@ -21,6 +30,31 @@
 }
 
 .e-input:focus {
-    border: var(--input-border);
+    background: var(--input-bg-focus);
+    border: var(--input-border-focus);
     outline: 0;
+}
+.e-input:not(:placeholder-shown):invalid {
+    background: var(--input-bg);
+    border: var(--input-warning-border);
+}
+
+.e-input--empty:not(:placeholder-shown):invalid {
+    background: var(--input-bg);
+    border: var(--input-border);
+}
+
+.e-input:valid {
+    background: var(--input-success-border);
+    border: var(--input-success-border);
+}
+
+.e-label {
+    color: var(--label-color);
+    font-weight: var(--label-font-weight);
+}
+
+.e-label--required::after {
+    content: var(--label-required-content);
+    color: var(--label-required-color);
 }

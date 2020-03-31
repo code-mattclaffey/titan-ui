@@ -42,7 +42,13 @@
             "allowSingleLine": true
         }],
         "jsx-a11y/label-has-associated-control": "warn",
-        "jsx-a11y/label-has-for": "warn",
+        "jsx-a11y/label-has-for": [ 2, {
+            "components": [ "Label" ],
+            "required": {
+                "every": [ "id" ]
+            },
+            "allowChildren": true
+        }],
         "react-hooks/rules-of-hooks": "warn",
         "react-hooks/exhaustive-deps": "warn",
         "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]

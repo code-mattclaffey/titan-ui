@@ -3,11 +3,16 @@
 --------------------*/
 
 :root {
-    --primary: #201f3e;
-    --primary-light: #6b60e7;
-    --secondary: #ea4855;
-    --secondary-light: #ff8791;
+    --primary: #1f2656;
+    --primary-light: #545da6;
+    --primary-lightest: #abb3f2;
+    --primary-darker: #161a3c;
+    --primary-darkest: #060923;
+    --secondary: #ffcc4d;
+    --secondary-light: #ffe299;
     --white: #ffffff;
     --black: #000000;
     --keyline: #dddddd;
+    --warning-color: #e84b17;
+    --success-color: #009999;
 }

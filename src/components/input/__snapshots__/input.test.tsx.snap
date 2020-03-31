@@ -2,12 +2,46 @@
 
 exports[`<Input /> should match snapshot 1`] = `
 <div>
-  <input
-    class="e-input"
-    id="hello-test"
-    name="hello-test"
-    required=""
-    type="text"
-  />
+  <div
+    class="e-input__container"
+  >
+    <label
+      class="e-label e-label--required"
+      for="hello-test"
+    >
+      Hello World
+    </label>
+    <input
+      class="e-input e-input--empty"
+      id="hello-test"
+      name="hello-test"
+      required=""
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
+
+exports[`<Input /> should match snapshot when it has a value 1`] = `
+<div>
+  <div
+    class="e-input__container"
+  >
+    <label
+      class="e-label e-label--required"
+      for="hello-test"
+    >
+      Hello World
+    </label>
+    <input
+      class="e-input"
+      id="hello-test"
+      name="hello-test"
+      required=""
+      type="text"
+      value="hello world"
+    />
+  </div>
 </div>
 `;
