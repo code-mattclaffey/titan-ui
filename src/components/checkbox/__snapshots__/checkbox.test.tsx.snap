@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> should match snapshot in checked state 1`] = `
+<div>
+  <label
+    class="e-checkbox"
+    for="hello-test"
+  >
+    <input
+      checked=""
+      class="u-visually-hidden e-checkbox__input"
+      id="hello-test"
+      name="hello-test"
+      required=""
+      type="checkbox"
+    />
+    <span
+      class="e-checkbox__indicator"
+    />
+    <span
+      class="e-label"
+    >
+      Hello Test
+    </span>
+  </label>
+</div>
+`;
+
+exports[`<Checkbox /> should match snapshot in default state 1`] = `
+<div>
+  <label
+    class="e-checkbox"
+    for="hello-test"
+  >
+    <input
+      class="u-visually-hidden e-checkbox__input"
+      id="hello-test"
+      name="hello-test"
+      required=""
+      type="checkbox"
+    />
+    <span
+      class="e-checkbox__indicator"
+    />
+    <span
+      class="e-label"
+    >
+      Hello Test
+    </span>
+  </label>
+</div>
+`;
+
+exports[`<Checkbox /> should match snapshot in disabled state 1`] = `
+<div>
+  <label
+    class="e-checkbox"
+    for="hello-test"
+  >
+    <input
+      class="u-visually-hidden e-checkbox__input"
+      disabled=""
+      id="hello-test"
+      name="hello-test"
+      required=""
+      type="checkbox"
+    />
+    <span
+      class="e-checkbox__indicator"
+    />
+    <span
+      class="e-label"
+    >
+      Hello Test
+    </span>
+  </label>
+</div>
+`;
