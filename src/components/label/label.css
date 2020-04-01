@@ -1,0 +1,29 @@
+/*
+    Anchor
+*/
+
+:root {
+    --label-color: var(--base-font-color);
+    --label-font-weight: var(--base-font-weight-semibold);
+    --label-font-weight-alt: var(--base-font-weight-normal);
+    --label-required-content: ' *';
+    --label-required-color: var(--warning-color);
+}
+
+.e-label {
+    color: var(--label-color);
+    font-weight: var(--label-font-weight);
+}
+
+.e-label--required .e-label__text::after {
+    content: var(--label-required-content);
+    color: var(--label-required-color);
+}
+
+.e-checkbox__input ~ .e-label__text {
+    font-weight: var(--label-font-weight-alt);
+}
+
+.e-checkbox__input[disabled] ~ .e-label__text {
+    opacity: 0.8;
+}

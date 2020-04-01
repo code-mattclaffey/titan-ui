@@ -12,12 +12,6 @@
     --input-success-bg: var(--success-color);
     --input-warning-border: 2px solid var(--warning-color);
     --input-warning-bg: var(--warning-color);
-
-    --label-color: var(--base-font-color);
-    --label-font-weight: var(--base-font-weight-semibold);
-    --label-font-weight-alt: var(--base-font-weight-normal);
-    --label-required-content: " *";
-    --label-required-color: var(--warning-color);
 }
 
 .e-input {
@@ -49,22 +43,3 @@
     background: var(--input-success-border);
     border: var(--input-success-border);
 }
-
-.e-label {
-    color: var(--label-color);
-    font-weight: var(--label-font-weight);
-}
-
-.e-label--required::after {
-    content: var(--label-required-content);
-    color: var(--label-required-color);
-}
-
-.e-checkbox__input ~ .e-label {
-    font-weight: var(--label-font-weight-alt);
-}
-
-.e-checkbox__input[disabled] ~ .e-label {
-    opacity: 0.8;
-}
-

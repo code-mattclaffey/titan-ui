@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
-import { CheckboxInterface } from './types';
+import { RadioInterface } from './types';
 import { Label } from '../label/label';
 
-export const Checkbox = ({
+export const Radio = ({
     additionalClassNames = '',
     name,
     id,
@@ -11,25 +11,26 @@ export const Checkbox = ({
     required = true,
     labelText,
     disabled,
-}: CheckboxInterface) => {
-    const classes = classNames('e-checkbox', additionalClassNames);
+}: RadioInterface) => {
+    const classes = classNames('e-radio', additionalClassNames);
 
     return (
         <Label
             htmlFor={id}
             additionalClassNames={classes}
             labelText={labelText}
+            required={false}
         >
             <input
-                type="checkbox"
-                className="u-visually-hidden e-checkbox__input"
+                type="radio"
+                className="u-visually-hidden e-radio__input"
                 name={name}
                 id={id}
                 required={required}
                 defaultChecked={checked}
                 disabled={disabled}
             />
-            <span className="e-checkbox__indicator" />
+            <span className="e-radio__indicator" />
         </Label>
     );
 };

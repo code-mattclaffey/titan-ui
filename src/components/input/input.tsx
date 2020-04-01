@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { InputInterface } from './types';
+import { Label } from '../label/label';
 
 export const Input = ({
     additionalClassNames = '',
@@ -19,24 +20,19 @@ export const Input = ({
         'e-input--empty': emptyValue,
     });
 
-    const labelClasses = classNames('e-label', additionalClassNames, {
-        'e-label--required': required !== undefined,
-    });
-
     return (
         <div className="e-input__container">
-            <label className={labelClasses} htmlFor={id}>
-                {labelText}
-            </label>
-            <input
-                type={type}
-                className={classes}
-                name={name}
-                id={id}
-                {...rest}
-                required={required}
-                defaultValue={emptyValue ? null : defaultValue}
-            />
+            <Label labelText={labelText} htmlFor={id}>
+                <input
+                    type={type}
+                    className={classes}
+                    name={name}
+                    id={id}
+                    {...rest}
+                    required={required}
+                    defaultValue={emptyValue ? null : defaultValue}
+                />
+            </Label>
         </div>
     );
 };

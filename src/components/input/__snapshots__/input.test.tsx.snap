@@ -7,18 +7,23 @@ exports[`<Input /> should match snapshot 1`] = `
   >
     <label
       class="e-label e-label--required"
+      data-testid="e-label"
       for="hello-test"
     >
-      Hello World
+      <span
+        class="e-label__text"
+      >
+        Hello World
+      </span>
+      <input
+        class="e-input e-input--empty"
+        id="hello-test"
+        name="hello-test"
+        required=""
+        type="text"
+        value=""
+      />
     </label>
-    <input
-      class="e-input e-input--empty"
-      id="hello-test"
-      name="hello-test"
-      required=""
-      type="text"
-      value=""
-    />
   </div>
 </div>
 `;
@@ -30,18 +35,23 @@ exports[`<Input /> should match snapshot when it has a value 1`] = `
   >
     <label
       class="e-label e-label--required"
+      data-testid="e-label"
       for="hello-test"
     >
-      Hello World
+      <span
+        class="e-label__text"
+      >
+        Hello World
+      </span>
+      <input
+        class="e-input"
+        id="hello-test"
+        name="hello-test"
+        required=""
+        type="text"
+        value="hello world"
+      />
     </label>
-    <input
-      class="e-input"
-      id="hello-test"
-      name="hello-test"
-      required=""
-      type="text"
-      value="hello world"
-    />
   </div>
 </div>
 `;
