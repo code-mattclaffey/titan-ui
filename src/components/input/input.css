@@ -29,6 +29,7 @@
     border: var(--input-border-focus);
     outline: 0;
 }
+
 .e-input:not(:placeholder-shown):invalid {
     background: var(--input-bg);
     border: var(--input-warning-border);

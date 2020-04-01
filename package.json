@@ -16,7 +16,7 @@
         "clean": "rm -rf ./dist",
         "serve": "http-server storybook-static -p 8081 -s",
         "test": "npm run lint:js && npm run jest && npm run snapshot",
-        "jest": "jest",
+        "jest": "jest --coverage",
         "bundlesize": "bundlesize",
         "prepublish": "npm run build",
         "storybook": "npm run build && start-storybook -s ./dist -p 6006",
