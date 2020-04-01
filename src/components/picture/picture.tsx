@@ -15,13 +15,9 @@ export const Picture = ({
 }: PictureInterface) => {
     const classes = classNames('e-picture', additionalClassNames);
 
-    let styleProps: React.CSSProperties = {
-        paddingTop: '',
+    const styleProps: { paddingTop: string } = {
+        paddingTop: null,
     };
-
-    if (style) {
-        styleProps = style;
-    }
 
     if (width && height) {
         styleProps.paddingTop = `${calculateAspectRatio(
@@ -31,7 +27,11 @@ export const Picture = ({
     }
 
     return (
-        <picture className={classes} {...rest} style={styleProps}>
+        <picture
+            className={classes}
+            {...rest}
+            style={{ ...style, ...styleProps }}
+        >
             {children}
         </picture>
     );

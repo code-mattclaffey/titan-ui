@@ -9,7 +9,7 @@ export const TextArea = ({
     id,
     required = true,
     defaultValue = '',
-    labelText = '',
+    labelText,
     ...rest
 }: TextAreaInterface) => {
     const emptyValue = defaultValue.trim().length === 0;

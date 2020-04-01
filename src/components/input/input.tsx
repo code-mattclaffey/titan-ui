@@ -11,7 +11,7 @@ export const Input = ({
     id,
     required = true,
     defaultValue = '',
-    labelText = '',
+    labelText,
     ...rest
 }: InputInterface) => {
     const emptyValue = defaultValue.trim().length === 0;

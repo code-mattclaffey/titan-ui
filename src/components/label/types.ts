@@ -4,4 +4,5 @@ export interface LabelInterface extends GenericComponent {
     htmlFor: string;
     labelText?: string;
     required?: boolean;
+    children: React.ReactNode;
 }
