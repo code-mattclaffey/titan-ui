@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextArea /> should match snapshot 1`] = `
+<div>
+  <label
+    class="e-label e-textarea"
+    data-testid="e-label"
+    for="hello-test"
+  >
+    <span
+      class="e-label__text"
+    >
+      Hello World
+    </span>
+    <textarea
+      class="e-input e-input--empty"
+      data-testid="e-textarea"
+      id="hello-test"
+      name="hello-test"
+    />
+  </label>
+</div>
+`;

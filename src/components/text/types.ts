@@ -1,3 +1,5 @@
 import { GenericComponent } from '../../module';
 
-export interface TextInterface extends GenericComponent {}
+export interface TextInterface extends GenericComponent {
+    children: React.ReactNode;
+}

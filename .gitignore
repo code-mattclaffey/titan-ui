@@ -15,3 +15,4 @@ styleguide/test/visual/ci_report
 storybook-static
 .env
 dist
+coverage/**/*

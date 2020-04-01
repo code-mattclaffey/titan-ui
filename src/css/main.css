@@ -32,6 +32,8 @@
 @import '../components/region/region.css';
 @import '../components/grid/grid.css';
 @import '../components/input/input.css';
+@import '../components/checkbox/checkbox.css';
+@import '../components/radio/radio.css';
 @import '../components/label/label.css';
 
 /* Utils */

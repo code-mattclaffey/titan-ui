@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Radio /> should match snapshot in checked state 1`] = `
+<div>
+  <label
+    class="e-label e-radio"
+    data-testid="e-label"
+    for="hello-test"
+  >
+    <span
+      class="e-label__text"
+    >
+      Hello Test
+    </span>
+    <input
+      checked=""
+      class="u-visually-hidden e-radio__input"
+      id="hello-test"
+      name="hello-test"
+      required=""
+      type="radio"
+    />
+    <span
+      class="e-radio__indicator"
+    />
+  </label>
+</div>
+`;
+
+exports[`<Radio /> should match snapshot in default state 1`] = `
+<div>
+  <label
+    class="e-label e-radio"
+    data-testid="e-label"
+    for="hello-test"
+  >
+    <span
+      class="e-label__text"
+    >
+      Hello Test
+    </span>
+    <input
+      class="u-visually-hidden e-radio__input"
+      id="hello-test"
+      name="hello-test"
+      required=""
+      type="radio"
+    />
+    <span
+      class="e-radio__indicator"
+    />
+  </label>
+</div>
+`;
+
+exports[`<Radio /> should match snapshot in disabled state 1`] = `
+<div>
+  <label
+    class="e-label e-radio"
+    data-testid="e-label"
+    for="hello-test"
+  >
+    <span
+      class="e-label__text"
+    >
+      Hello Test
+    </span>
+    <input
+      class="u-visually-hidden e-radio__input"
+      disabled=""
+      id="hello-test"
+      name="hello-test"
+      required=""
+      type="radio"
+    />
+    <span
+      class="e-radio__indicator"
+    />
+  </label>
+</div>
+`;

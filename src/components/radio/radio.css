@@ -1,0 +1,58 @@
+/* Checkbox Styling */
+
+:root {
+    --radio-indicator-size: 1em;
+    --radio-indicator-border-radius: 50%;
+    --radio-indicator-margin-right: 0.5em;
+    --radio-indicator-top-position: 0.2em;
+    --radio-indicator-border: var(--input-border);
+    --radio-indicator-selected-size: 0.5em;
+    --radio-indicator-selected-border: var(--input-border-focus);
+    --radio-indicator-disabled-bg: var(--keyline);
+    --radio-indicator-disabled-border-color: var(--keyline);
+}
+
+.e-radio {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.e-radio__indicator {
+    border: var(--input-border);
+    border-radius: var(--radio-indicator-border-radius);
+    flex: none;
+    height: var(--radio-indicator-size);
+    margin-right: var(--radio-indicator-margin-right);
+    position: relative;
+    top: var(--radio-indicator-top-position);
+    width: var(--radio-indicator-size);
+}
+
+.e-radio__input:checked ~ .e-radio__indicator {
+    border-color: var(--radio-indicator-selected-border);
+}
+
+.e-radio__input:disabled:checked ~ .e-radio__indicator,
+.e-radio__input:disabled ~ .e-radio__indicator {
+    background: var(--radio-indicator-disabled-bg);
+    border-color: var(--radio-indicator-disabled-border-color);
+}
+
+.e-radio__input:checked ~ .e-radio__indicator::after {
+    background: var(--primary);
+    border-radius: var(--radio-indicator-border-radius);
+    content: '';
+    height: var(--radio-indicator-selected-size);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--radio-indicator-selected-size);
+}
+
+.e-radio__input:disabled:checked ~ .e-radio__indicator::after,
+.e-radio__input:disabled ~ .e-radio__indicator::after {
+    display: none;
+}
