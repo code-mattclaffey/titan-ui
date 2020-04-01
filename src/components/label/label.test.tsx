@@ -9,15 +9,13 @@ afterEach(() => {
 describe('<Label />', () => {
     it('should match the snapshot', () => {
         const { container } = render(
-            <>
-                <Label
-                    htmlFor="test"
-                    labelText="Hello World"
-                    required={false}
-                />
-                ,
+            <Label
+                htmlFor="test"
+                labelText="Hello World"
+                required={false}
+            >
                 <input id="test" />
-            </>,
+            </Label>,
         );
 
         expect(container).toMatchSnapshot();
@@ -25,15 +23,9 @@ describe('<Label />', () => {
 
     it('should have required * when the prop is set', () => {
         const { queryByTestId } = render(
-            <>
-                <Label
-                    htmlFor="test"
-                    labelText="Hello World"
-                    required
-                />
-                ,
+            <Label htmlFor="test" labelText="Hello World" required>
                 <input id="test" />
-            </>,
+            </Label>,
         );
 
         expect(

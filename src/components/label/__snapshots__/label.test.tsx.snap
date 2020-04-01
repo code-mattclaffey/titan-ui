@@ -12,10 +12,9 @@ exports[`<Label /> should match the snapshot 1`] = `
     >
       Hello World
     </span>
+    <input
+      id="test"
+    />
   </label>
-  ,
-  <input
-    id="test"
-  />
 </div>
 `;
