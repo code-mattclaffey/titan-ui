@@ -12,8 +12,8 @@
     },
     "scripts": {
         "start": "npm run build && npm run storybook",
-        "build": "npm run clean && rollup --config ./rollup.config.js",
-        "clean": "rm -rf ./dist",
+        "build": "rollup --config ./rollup.config.js",
+        "prebuild": "rm -rf ./dist",
         "serve": "http-server storybook-static -p 8081 -s",
         "test": "npm run lint:js && npm run jest && npm run snapshot",
         "jest": "jest --coverage",
