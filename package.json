@@ -20,7 +20,7 @@
         "bundlesize": "bundlesize",
         "prepublish": "npm run build",
         "storybook": "npm run build && start-storybook -s ./dist -p 6006",
-        "deploy": "npm run test && npm run build && npm run build-storybook",
+        "deploy": "npm run lint:js && npm run jest && npm run build && npm run build-storybook",
         "build-storybook": "build-storybook -s ./dist",
         "copy": "",
         "snapshot": "build-storybook -s ./dist && percy-storybook --widths=320,1300",
