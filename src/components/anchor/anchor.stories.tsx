@@ -9,7 +9,6 @@ export default {
 
 export const anchor = () => (
     <>
-        <Anchor url="/other">Default Anchor</Anchor> <br />
-        <Anchor url="/">Active Anchor</Anchor>
+        <Anchor url="/other">Default Anchor</Anchor>
     </>
 );

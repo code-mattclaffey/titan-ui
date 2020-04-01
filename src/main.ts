@@ -11,4 +11,7 @@ export * from './components/region';
 export * from './components/blockquote';
 export * from './components/grid';
 export * from './components/anchor';
+export * from './components/input';
 export * from './components/label';
+export * from './components/checkbox';
+export * from './components/textarea';

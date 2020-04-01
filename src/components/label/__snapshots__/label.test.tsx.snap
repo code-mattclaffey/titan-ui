@@ -4,11 +4,17 @@ exports[`<Label /> should match the snapshot 1`] = `
 <div>
   <label
     class="e-label"
+    data-testid="e-label"
     for="test"
   >
-    <span>
+    <span
+      class="e-label__text"
+    >
       Hello World
     </span>
+    <input
+      id="test"
+    />
   </label>
 </div>
 `;

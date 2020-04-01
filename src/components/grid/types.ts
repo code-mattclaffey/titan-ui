@@ -1,6 +1,8 @@
 import { GenericComponent } from '../../module';
 
-export interface GridIterface extends GenericComponent {}
+export interface GridIterface extends GenericComponent {
+    children: React.ReactNode;
+}
 
 export interface GridItemInterface extends GenericComponent {
     columns: {
@@ -10,4 +12,5 @@ export interface GridItemInterface extends GenericComponent {
         lg?: string;
         xl?: string;
     };
+    children: React.ReactNode;
 }

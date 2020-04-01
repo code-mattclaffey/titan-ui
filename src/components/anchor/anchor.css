@@ -5,10 +5,8 @@
 :root {
     --anchor-color: var(--primary);
     --anchor-hover-color: var(--primary-light);
-    --anchor-active-color: var(--secondary);
     --anchor-border: 1px solid var(--primary);
     --anchor-hover-border: 1px dashed var(--primary-light);
-    --anchor-active-border: 1px dashed var(--secondary);
 }
 
 .e-link,
@@ -24,12 +22,4 @@ a:not([class]):hover,
 a:not([class]):focus {
     border-bottom: var(--anchor-hover-border);
     color: var(--anchor-hover-color);
-}
-
-.e-link:visited,
-.e-link:active,
-a:not([class]):visited,
-a:not([class]):active {
-    border-bottom: var(--anchor-active-border);
-    color: var(--anchor-active-color);
 }

@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "workbench.colorCustomizations": {
+            "[Palenight Theme]": {
+                "titleBar.activeBackground": "#6b60e7",
+                "titleBar.activeForeground": "#ffffff"
+            }
+        },
+        "window.titleBarStyle": "custom"
+    }
+}

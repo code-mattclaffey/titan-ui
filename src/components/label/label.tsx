@@ -7,13 +7,23 @@ export const Label = ({
     children,
     htmlFor,
     labelText,
+    required = true,
     ...rest
 }: LabelInterface) => {
-    const classes = classNames('e-label', additionalClassNames);
+    const classes = classNames('e-label', additionalClassNames, {
+        'e-label--required': required,
+    });
 
     return (
-        <label className={classes} htmlFor={htmlFor} {...rest}>
-            <span>{labelText}</span>
+        <label
+            className={classes}
+            htmlFor={htmlFor}
+            {...rest}
+            data-testid="e-label"
+        >
+            {labelText && (
+                <span className="e-label__text">{labelText}</span>
+            )}
             {children}
         </label>
     );

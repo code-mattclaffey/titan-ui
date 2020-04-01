@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Checkbox /> should match snapshot in checked state 1`] = `
+<div>
+  <label
+    class="e-label e-checkbox e-label--required"
+    data-testid="e-label"
+    for="hello-test"
+  >
+    <span
+      class="e-label__text"
+    >
+      Hello Test
+    </span>
+    <input
+      checked=""
+      class="u-visually-hidden e-checkbox__input"
+      id="hello-test"
+      name="hello-test"
+      required=""
+      type="checkbox"
+    />
+    <span
+      class="e-checkbox__indicator"
+    />
+  </label>
+</div>
+`;
+
+exports[`<Checkbox /> should match snapshot in default state 1`] = `
+<div>
+  <label
+    class="e-label e-checkbox e-label--required"
+    data-testid="e-label"
+    for="hello-test"
+  >
+    <span
+      class="e-label__text"
+    >
+      Hello Test
+    </span>
+    <input
+      class="u-visually-hidden e-checkbox__input"
+      id="hello-test"
+      name="hello-test"
+      required=""
+      type="checkbox"
+    />
+    <span
+      class="e-checkbox__indicator"
+    />
+  </label>
+</div>
+`;
+
+exports[`<Checkbox /> should match snapshot in disabled state 1`] = `
+<div>
+  <label
+    class="e-label e-checkbox e-label--required"
+    data-testid="e-label"
+    for="hello-test"
+  >
+    <span
+      class="e-label__text"
+    >
+      Hello Test
+    </span>
+    <input
+      class="u-visually-hidden e-checkbox__input"
+      disabled=""
+      id="hello-test"
+      name="hello-test"
+      required=""
+      type="checkbox"
+    />
+    <span
+      class="e-checkbox__indicator"
+    />
+  </label>
+</div>
+`;

@@ -10,7 +10,9 @@ describe('<Region />', () => {
     it('should match snapshot', () => {
         const { container } = render(
             <Region>
-                <RegionInner />
+                <RegionInner>
+                    <p>Some text</p>
+                </RegionInner>
             </Region>,
         );
         expect(container).toMatchSnapshot();
@@ -19,7 +21,9 @@ describe('<Region />', () => {
     it('should have a thin class', () => {
         const { queryByTestId } = render(
             <Region>
-                <RegionInner thin />
+                <RegionInner thin>
+                    <p>Some text</p>
+                </RegionInner>
             </Region>,
         );
         expect(

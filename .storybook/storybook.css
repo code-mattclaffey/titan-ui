@@ -27,7 +27,7 @@
 }
 
 .o-grid__item {
-    background-color: var(--secondary);
+    background-color: var(--primary-darker);
     color: var(--white);
     padding: 20px;
 }
