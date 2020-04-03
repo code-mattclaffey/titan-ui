@@ -28,29 +28,29 @@
     --button-hover-border: 2px solid var(--primary-darkest);
     --button-hover-color: var(--white);
 
-    --button-secondary-bg: var(--primary-light);
-    --button-secondary-border: 2px solid var(--primary-light);
+    --button-secondary-bg: var(--secondary);
+    --button-secondary-border: 2px solid var(--secondary);
     --button-secondary-color: var(--white);
-    --button-secondary-hover-bg: var(--primary);
-    --button-secondary-hover-border: 2px solid var(--primary);
+    --button-secondary-hover-bg: var(--secondary-light);
+    --button-secondary-hover-border: 2px solid var(--secondary-light);
     --button-secondary-hover-color: var(--white);
 
-    --button-outline-bg: var(--white);
+    --button-outline-bg: transparent;
     --button-outline-border: 2px solid var(--black);
     --button-outline-color: var(--black);
-    --button-outline-hover-bg: var(--black);
+    --button-outline-hover-bg: transparent;
     --button-outline-hover-border: 2px solid var(--black);
     --button-outline-hover-color: var(--white);
 
-    --button-plain-bg: var(--white);
-    --button-plain-border: 2px solid var(--white);
+    --button-plain-bg: transparent;
+    --button-plain-border: 2px solid transparent;
     --button-plain-color: var(--black);
-    --button-plain-hover-bg: var(--white);
-    --button-plain-hover-border: 2px solid var(--white);
+    --button-plain-hover-bg: transparent;
+    --button-plain-hover-border: 2px solid transparent;
     --button-plain-hover-color: var(--primary);
 }
 
-@media (--md-viewport) {
+@media (--sm-viewport) {
     :root {
         --button-display: inline-block;
     }
@@ -77,7 +77,7 @@
     margin-top: var(--button-gap);
 }
 
-@media (--md-viewport) {
+@media (--sm-viewport) {
     .c-button {
         width: auto;
     }
@@ -151,7 +151,7 @@
     padding: var(--button-small-padding);
 }
 
-@media (--md-viewport) {
+@media (--sm-viewport) {
     .c-button--wide {
         width: 100%;
     }
